@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<html>
+<head id="home">
+ <title>Portfolio website</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+ 
+
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ <!----hero Section start---->
+
+ <div class="hero">
+  <nav>
+	  <div id="logo">
+   <h2 class="logo"><img src="img/testpng (1).png" alt="logo" height="250px" width="350px"></h2>
+	  </div>
+   <ul>
+    <li><a href="index.html">Home</a></li>
+   
+   </ul>
+  </nav>
+	 </div>
+	
+	<div id="header1">
+	<img src="img/header.png" alt="header1" height="500px">
+	
+	</div>
+	
+	<div id="bganim" class="bganim">
+	<div id="animation">
+	<h2>Animation</h2>
+	</div>
+ 	
+		<center>
+	<div id="animcon">
+	<video width="320" height="240" controls>
+  	<source src="img/lipsycn.mp4" type="video/mp4">
+  	<source src="movie.ogg" type="video/ogg">
+  	Your browser does not support the video tag.
+	</video>
+	</div>
+	</center>
+	</div>
+		
+	<div id="bgd" class="bgd">
+	<div id="gd">
+		<h2>Graphic Design</h2>
+	</div>
+
+<div class="row">
+  <div class="column">
+   <img src="img/gd.jpg" alt="ps" width="300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+   <img src="img/gd2.jpg" alt="ps1" width="300px" height="214px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/PACKAGING DESIGN 4.jpg" alt="ps2" width="282px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+   <img src="img/love ring.png" alt="ps3" width="214px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+	<div class="column">
+   <img src="img/1.png" alt="ps4" width="300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+	 <div class="column">
+   <img src="img/8.png" alt="ps5" width="300px" height="170px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+	<div class="column">
+    <img src="img/2.png" alt="ps6" width="282px" height="170px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+	<div class="column">
+   <img src="img/fyp.png" alt="fyp" width="214px"  height="170px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+	
+</div>
+		
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+       <img src="img/gd.jpg" alt="ps" width="300px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="img/gd2.jpg" alt="ps1" width="300px" height="214px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="img/PACKAGING DESIGN 4.jpg" alt="ps2" width="282px">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="img/love ring.png" alt="ps3" width="214px">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="img/1.png" alt="ps4" width="300px">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="img/8.png" alt="ps5" width="300px" height="170px">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="img/2.png" alt="ps6" width="282px" height="170px">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+       <img src="img/fyp.png" alt="fyp" width="214px"  height="170px">
+    </div>
+	  
+	  
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/gd.jpg" alt="Dino Cookies Packaging" width="300px" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gd2.jpg" alt="3D Living Room" width="300px" height="214px" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/PACKAGING DESIGN 4.jpg" alt="Dino Cookies Packaging" width="282px" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/love ring.png" alt="Client's Work" width="214px" onclick="currentSlide(4)" >
+    </div>
+	   <div class="column">
+      <img class="demo cursor" src="img/1.png" alt="Modelling Kitchen" width="300px" onclick="currentSlide(4)" >
+    </div>
+	  <div class="column">
+      <img class="demo cursor" src="img/8.png" alt="Modelling Kitchen" width="300px" height="170px" onclick="currentSlide(4)" >
+    </div>
+	  <div class="column">
+      <img class="demo cursor" src="img/2.png" alt="Modelling Kitchen" width="282px" height="170px" onclick="currentSlide(4)" >
+    </div>
+	  <div class="column">
+      <img class="demo cursor" src="img/fyp.png" alt="Modelling Kitchen" width="214px"  height="170px" onclick="currentSlide(4)" >
+    </div>
+	  
+  </div>
+</div>
+
+		<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+		
+	</div>
+
+	
+	
+	<footer>
+  <p>My Social</p>
+  <div id="social" class="social">
+   <a href="https://www.facebook.com/lyana.fiqah" target="_blank"><i class="fab fa-facebook-f"></i></a>
+   <a href="https://www.instagram.com/lyanashafqh/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+	 
+  <p class="end">Copyright By Lyana Shafiqah</p>
+ </footer>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
